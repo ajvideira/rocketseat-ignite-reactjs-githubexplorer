@@ -1,9 +1,10 @@
-import { RepositoryItem } from './RepositoryItem';
+import { Counter } from "./Counter";
+import { RepositoryItem } from "./RepositoryItem";
 
 const repository = {
-  name: 'Repository 1',
-  description: 'Repository 1 description',
-  link: 'https://github.com',
+  name: "Repository 1",
+  description: "Repository 1 description",
+  link: "https://github.com",
 };
 
 export function RepositoryList() {
@@ -15,6 +16,7 @@ export function RepositoryList() {
         <RepositoryItem repository={repository} />
         <RepositoryItem repository={repository} />
         <RepositoryItem repository={repository} />
+        <Counter />
       </ul>
     </section>
   );
